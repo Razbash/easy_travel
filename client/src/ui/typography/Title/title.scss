@@ -1,0 +1,11 @@
+@import '../../../styles/stylesKit.scss';
+
+.typography-title {
+    margin-bottom: 8px;
+    font-family: $font-family-secondary;
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 3.5625rem;
+    color: $color-white;
+    text-align: center;
+}

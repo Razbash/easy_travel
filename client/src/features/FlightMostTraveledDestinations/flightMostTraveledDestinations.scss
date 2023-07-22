@@ -1,0 +1,5 @@
+.find-flight-form {
+    &--four-columns {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

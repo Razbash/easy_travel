@@ -1,0 +1,46 @@
+@import '../../styles/stylesKit.scss';
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 30px 0 60px;
+}
+
+.tabs-item {
+    color: $color-white;
+    background-color: hsla(0,0%,100%,.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 52px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: .8125rem;
+    line-height: 1.0625rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &--active {
+        background-color: $color-white;
+        color: $brand-primary-500;
+    }
+
+    &:first-of-type {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    &:last-of-type {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    &:hover:not(&--active) {
+        background-color: hsla(0,0%,100%,.16);
+    }
+}

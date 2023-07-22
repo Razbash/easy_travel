@@ -1,0 +1,15 @@
+@import '../../styles/stylesKit.scss';
+
+.home {
+    background: $brand-primary-500;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .typography-strong {
+        margin-bottom: 24px;
+    }
+}

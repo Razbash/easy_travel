@@ -1,0 +1,11 @@
+@import '../../../styles/stylesKit.scss';
+
+.typography-strong {
+    font-family: $font-family-secondary;
+    line-height: 1.375rem;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    display: block;
+    color: $color-white;
+    text-align: center;
+}

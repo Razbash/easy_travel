@@ -1,0 +1,19 @@
+.find-flight-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 2px;
+    max-width: 1280px;
+
+    .search-input:first-of-type .search-input__field {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .search-input:last-of-type .search-input__field {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .search-input:last-of-type {
+        margin-right: 8px;
+    }
+}

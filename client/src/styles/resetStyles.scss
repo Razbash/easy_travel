@@ -1,0 +1,23 @@
+@import './stylesKit.scss';
+
+body {
+    margin: 0;
+    font-size: 30px;
+    color: $color-black;
+    font-family: $font-family-primary;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
