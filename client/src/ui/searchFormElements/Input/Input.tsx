@@ -4,7 +4,7 @@ interface IInput {
     id: string,
     label: string,
     value: string,
-    onChange: (e: any) => void
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 const Input = ({id, label, value, onChange}: IInput) => {

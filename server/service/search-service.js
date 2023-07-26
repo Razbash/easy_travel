@@ -4,8 +4,8 @@ class SearchService {
     async flightMostTraveledDestinationsService(originCityCode, period) {
         let searchResult;
 
-        await $amadeusApi.get(process.env.AMADEUS_API_URL_V1 + `/travel/analytics/air-traffic/traveled?originCityCode=${originCityCode}&period=${period}`, {
-            data: {
+        await $amadeusApi.get(process.env.AMADEUS_API_URL_V1 + '/travel/analytics/air-traffic/traveled', {
+            params: {
                 originCityCode,
                 period,
             }

@@ -1,10 +1,9 @@
 import FlightMostTraveledDestinations from "../../features/FlightMostTraveledDestinations/FlightMostTraveledDestinations";
-import FindFlight from "../../features/FindFlight/FindFlight";
 import { useAppSelector } from "../../store/redux";
 import Tabs from "../../ui/tabs/Tabs";
 
 const MainForm = () => {
-    const forms = [<FindFlight/>, <FlightMostTraveledDestinations/>];
+    const forms = [<FlightMostTraveledDestinations/>];
     const {activeTab} = useAppSelector(state => state.tabs);
 
     return(

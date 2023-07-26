@@ -5,7 +5,7 @@ import './tabs.scss';
 
 const Tabs = () => {
     const dispatch = useAppDispatch();
-    const tabs = ["Поиск рейса", "Популярные рейсы из вашего города", "Дешевые рейсы из вашего города"];
+    const tabs = ["Популярные рейсы из вашего города", "Дешевые рейсы из вашего города"];
 
     const onSelectTab = (index: number) => {
         dispatch(selectTab(index));

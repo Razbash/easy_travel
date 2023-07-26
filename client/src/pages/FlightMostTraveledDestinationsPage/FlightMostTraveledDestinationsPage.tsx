@@ -4,11 +4,10 @@ import { useAppDispatch, useAppSelector } from "../../store/redux";
 import { fetchMostTraveledDestinations } from "../../store/MostTraveledDestinations/MostTraveledDestinationsActions";
 
 const FlightMostTraveledDestinationsPage = () => {
-    const {originCityCode, period} = useParams();
+    const {originCityCode = '', period = ''} = useParams();
     const {error, loading, flights} = useAppSelector(state => state.mostTraveledDestinations);
-    const dispatch = useAppDispatch();
 
-    console.log(flights);
+    const dispatch = useAppDispatch();
 
     useEffect(() => {
         dispatch(fetchMostTraveledDestinations(originCityCode, period));

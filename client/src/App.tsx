@@ -2,9 +2,10 @@ import Home from "./pages/Home/Home";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { setupStore } from './store';
+import FlightMostTraveledDestinationsPage from "./pages/FlightMostTraveledDestinationsPage/FlightMostTraveledDestinationsPage";
+
 import './styles/resetStyles.scss';
 import './styles/fonts.scss';
-import FlightMostTraveledDestinationsPage from "./pages/FlightMostTraveledDestinationsPage/FlightMostTraveledDestinationsPage";
 
 const store = setupStore();
 

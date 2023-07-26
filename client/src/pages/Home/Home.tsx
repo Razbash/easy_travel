@@ -1,4 +1,4 @@
-import { Title, StrongText } from '../../ui/typography/inedx';
+import { Title, StrongText } from '../../ui';
 import MainForm from '../../widgets/MainForm/MainForm';
 import './home.scss';
 
