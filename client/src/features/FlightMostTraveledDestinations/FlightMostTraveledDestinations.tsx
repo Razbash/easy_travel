@@ -8,7 +8,7 @@ const FlightMostTraveledDestinations = () => {
     const [when, setWhen] = useState("");
 
     return(
-        <div className="find-flight-form find-flight-form--four-columns">
+        <div className="find-flight-form find-flight-form--three-columns">
             <Input id="where_from"
                 label="Откуда"
                 value={from}

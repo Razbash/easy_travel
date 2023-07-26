@@ -1,3 +1,5 @@
+@import '../../styles/stylesKit.scss';
+
 .find-flight-form {
     width: 100%;
     display: grid;
@@ -17,7 +19,31 @@
         margin-right: 8px;
     }
 
+    &--three-columns {
+        grid-template-columns: repeat(2, 1fr) 168px;
+    }
+
     &--four-columns {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr) 168px;
+    }
+}
+
+
+@media (max-width: $small-mobile-width) {
+    .find-flight-form {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 8px;
+        max-width: 400px;
+
+        .search-input:last-of-type .search-input__field,
+        .search-input:first-of-type .search-input__field {
+            border-radius: 10px;
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .search-input:last-of-type {
+            margin-right: 0;
+        }
     }
 }
