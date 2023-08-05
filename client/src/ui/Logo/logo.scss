@@ -1,0 +1,23 @@
+@import '../../styles/stylesKit.scss';
+
+.logo {
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &__image {
+        width: 32px;
+        height: 32px;
+        fill: $brand-primary-500;
+        stroke: $brand-primary-500;
+    }
+
+    &__text {
+        font-family: $font-family-secondary;
+        font-size: 1.5rem;
+    }
+}
